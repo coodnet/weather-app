@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#weather{
+  width: 100vw;
+  height: 100vh;
+  background: url(andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg) no-repeat;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 32%;
+  min-height: 55%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.781);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.city{
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.date{
+  font-size: 15px;
+} 
+
+.temp{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+.input input{
+  width: 300px;
+  height: 35px;
+  padding: 0 5px ;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+
+}
+
+.input input::placeholder{
+  color: white;
+}
+
+
+@media screen and (min-width:300px) and (max-width:900px){
+ 
+  .card{
+    width: 250px;
+    min-height: 45%;
+  }
+
+  .city{
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .date{
+    font-size: 12px;
+  } 
+  
+  .temp{
+    font-size: 39px;
+    font-weight: 600;
+  }
+  
+  .input input{
+    width: 100%;
+    height: 25px;
+  }
+
+  .main-temp{
+    font-size: 16px;
+  }
+  
+}
